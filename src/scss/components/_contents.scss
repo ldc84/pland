@@ -1,0 +1,136 @@
+#sub {
+  padding: 160px 0 0 0;
+}
+
+.sub-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sub-title {
+  margin-bottom: 50px;
+  color: #1b232f;
+  font-size: rem(32);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+}
+
+.contents-box {
+  display: flex;
+  width: 100%;
+  padding: 0 0 80px 0;
+  border-top: 2px solid #777c84;
+
+  .lnb {
+    width: 296px;
+    flex-shrink: 0;
+    padding: 0 70px 0 20px;
+    > ul {
+      > li {
+        margin-top: 48px;
+        > a {
+          color: #52575f;
+          font-size: rem(20);
+          font-weight: 500;
+          line-height: 1.2;
+          letter-spacing: -0.6px;
+        }
+        ul {
+          display: none;
+          margin: 15px 0 -8px 0;
+          padding: 6px 0 26px 20px;
+          background-color: #f6f8fa;
+          border-radius: 8px;
+          li {
+            margin-top: 20px;
+            a {
+              color: #52575f;
+              font-size: rem(14);
+              line-height: 1.2;
+              letter-spacing: -0.42px;
+              &.active {
+                color: #1b232f;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        &.active {
+          > a {
+            color: #2379d0;
+          }
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .contents-inner {
+    flex: 1;
+    padding: 50px 0 0 0;
+  }
+}
+
+.title-con {
+  position: relative;
+  margin-bottom: 80px;
+  h3 {
+    color: #1b232f;
+    font-size: rem(32);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.96px;
+  }
+  .coment {
+    margin-top: 16px;
+    color: #52575f;
+    font-size: rem(15);
+    line-height: 1.2;
+    letter-spacing: -0.45px;
+  }
+  .post-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    a,
+    p {
+      color: #777c84;
+      font-size: rem(15);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.45px;
+    }
+    p {
+      margin-left: 28px;
+    }
+  }
+}
+
+.title-type-1 {
+  margin-bottom: 30px;
+  color: #52575f;
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.78px;
+}
+
+.text-box-1 {
+  padding: 0 0 0 15px;
+  color: #52575f;
+  font-size: rem(16);
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+}
+
+.text-guide-1 {
+  margin-top: 80px;
+  color: #777c84;
+  font-size: rem(14);
+  line-height: 1.43;
+  letter-spacing: -0.42px;
+}

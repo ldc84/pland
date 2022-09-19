@@ -1,0 +1,45 @@
+#footer {
+  > div {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.18px;
+  }
+  address,
+  p {
+    color: #697888;
+    font-size: rem(15.5);
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.16px;
+  }
+  .foot-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    p {
+      margin-right: 15px;
+    }
+  }
+  .foot-copy-utill {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    p,
+    a {
+      margin-right: 20px;
+      color: #697888;
+      font-size: rem(14);
+      line-height: 1.2;
+      letter-spacing: -0.14px;
+    }
+  }
+}
