@@ -56,15 +56,27 @@
         letter-spacing: -0.48px;
       }
       .tit {
+        position: relative;
         display: inline-block;
         margin-top: 10px;
         padding-right: 20px;
         color: #1b232f;
         font-size: rem(24);
         font-weight: 600;
-        letter-spacing: -0.72px;
-        background: url("../images/ico_arrow01.png") no-repeat right center;
-        background-size: 13px auto;
+        letter-spacing: -0.72px;        
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 13px;
+          height: 13px;
+          margin-top: -6px;
+          background: url("../images/ico_arrow01_hover.png") no-repeat right center;
+          background-size: cover;
+          opacity: 0.4;
+          transition: all .2s ease-in-out;
+        }
       }
       & + a {
         position: relative;
@@ -83,7 +95,9 @@
 
       &:hover {
         .tit {
-          background-image: url("../images/ico_arrow01_hover.png");
+          &:after {
+            opacity: 1;
+          }
         }
       }
     }

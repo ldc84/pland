@@ -21,17 +21,12 @@
     align-items: center;
     a {
       display: block;
-      width: 106px;
+      width: 100px;
       height: 18px;
-      background-image: url("../images/logo.png");
-      background-image: image-set(
-        url("../images/logo.png") 1x,
-        url("../images/logo@2x.png") 2x,
-        url("../images/logo@3x.png") 3x,
-      );
+      background-image: url("../images/logo.svg");
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 100% auto;
+      background-size: cover;
     }
     span {
       margin-left: 14px;
@@ -69,16 +64,6 @@
   // active
   &.active {
     background-color: #fff;
-    h1 {
-      a {
-        background-image: url("../images/logo.png");
-        background-image: image-set(
-          url("../images/logo.png") 1x,
-          url("../images/logo@2x.png") 2x,
-          url("../images/logo@3x.png") 3x,
-        );
-      }
-    }
   }
 
 }
